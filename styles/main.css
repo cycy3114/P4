@@ -350,6 +350,88 @@ footer p {
     margin: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar li {
+    display: inline-block;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Menu Toggle (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle button */
+    }
+
+    nav {
+        display: none; /* Hide navigation menu by default */
+    }
+
+    nav.active {
+        display: block; /* Show navigation menu when active */
+    }
+
+    .nav-bar {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px;
+        background-color: #007BFF;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-bar a {
+        text-align: center;
+        padding: 10px 0;
+        display: block;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects, .skills {
