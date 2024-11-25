@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <!-- DEVELOPER: Ying Chen, IS117-003, Spring 2024 -->
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1>My Skills</h1>
+    <div class="top-bar">
+        <form class="search-form" action="#" method="GET">
+            <label for="search-bar" class="visually-hidden">Search</label>
+            <input type="text" id="search-bar" name="search" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="school.html">School</a></li>
+                </ul>
+            </li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="skills-section">
+        <h2>About Me</h2>
+        <img src="images/picture.jpg" alt="Your Photo" class="profile-picture">
+        <p>
+            Hi! I'm a college student majoring in Information Systems with a passion for technology and problem-solving.
+            I specialize in creating efficient solutions for data management and website development.
+        </p>
+        <h2>My Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, JavaScript, SQL</li>
+            <li>Web Development: HTML, CSS, React</li>
+            <li>Database Management: MySQL, PostgreSQL</li>
+            <li>Project Management: Agile, Smartsheet</li>
+            <li>Problem Solving and Analytical Skills</li>
+        </ul>
+    </section>
+
+    <!-- Aside for Additional Info -->
+    <aside class="skills-aside">
+        <h3>Quick Facts</h3>
+        <ul>
+            <li>📍 Location: Your City</li>
+            <li>🎓 Education: Bachelor's in Information Systems</li>
+            <li>🔗 <a href="https://github.com/yourprofile" target="_blank">GitHub Profile</a></li>
+            <li>✉️ Email: your-email@example.com</li>
+        </ul>
+    </aside>
+</main>
+<footer>
+    <p>&copy; Ying Chen, Nov 26, 2024 Privacy Statement | Terms of Service </p>
+</footer>
+</body>
+</html>

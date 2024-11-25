@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1>Contact Me</h1>
+    <div class="top-bar">
+        <form class="search-form" action="#" method="GET">
+            <label for="search-bar" class="visually-hidden">Search</label>
+            <input type="text" id="search-bar" name="search" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="school.html">School</a></li>
+                </ul>
+            </li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="contact">
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Ying Chen, Nov 26, 2024 Privacy Statement | Terms of Service </p>
+</footer>
+</body>
+</html>

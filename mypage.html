@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <!-- DEVELOPER: Ying Chen, IS117-003, Spring 2024 -->
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1>Ying Chen</h1>
+    <p>Aspiring Information Systems Professional</p>
+    <div class="top-bar">
+        <form class="search-form" action="#" method="GET">
+            <label for="search-bar" class="visually-hidden">Search</label>
+            <input type="text" id="search-bar" name="search" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="school.html">School</a></li>
+                </ul>
+            </li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm an Information Systems student passionate about solving problems through technology.
+            Currently learning about web development, project management, and financial accounting. As a
+            recent graduate in Information Systems, my passion lies in leveraging technology to solve
+            complex problems and enhance business efficiency. I possess a strong foundation in data analysis,
+            system design, and programming, driven by a desire to contribute to the innovative and dynamic
+            field of information systems. I am eager to apply my skills and knowledge to create impactful
+            solutions that bridge the gap between technology and business needs.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Git Tutorial</h3>
+                <p>A step-by-step guide to using Git and WebStorm.</p>
+                <a href="#">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Water Purification System</h3>
+                <p>Project Integration Management for a sustainable water system.</p>
+                <a href="#">View on Smartsheet</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>HTML, CSS, JavaScript, Python, C++</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>WebStorm, Git, Smartsheet</p>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <p>Project Management, Communication</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="#">cycy3114@gmail.com</a></p>
+        <p>LinkedIn: <a href="#">My LinkedIn Profile</a></p>
+        <p>If you have any questions or would like to get in touch,
+        please <a href="contact.html">Read more.</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; Ying Chen, Nov 26, 2024 Privacy Statement | Terms of Service </p>
+</footer>
+</main>
+</body>
+</html>
